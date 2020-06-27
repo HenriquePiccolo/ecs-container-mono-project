@@ -11,7 +11,7 @@ version: 0.2
  build:
      commands:
      - echo "teste" >> elb.txt
-     - ./deploy.sh
+     - ./deploy.sh us-east-1 $STACK_NAME
  post_build:
      commands:
      - echo "DONE!!!!"
